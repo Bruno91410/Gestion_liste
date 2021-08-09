@@ -1,0 +1,8 @@
+# Ignore 
+creer-une-solution-gestion-listes-chris-chevalier.pdf
+
+*.txt
+/repertoire
+
+# sauf inclure 
+!readme.txt
