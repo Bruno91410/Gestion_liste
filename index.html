@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#todo</title>
+    <meta name="description" content="todo list" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Ma liste des Tâches</h1>
+      </header>
+      <div id="taskinput">
+        <form name="taskinputname" id="taskinputfield" onsubmit="return false;">
+          <input
+            type="text"
+            maxlength="35"
+            value=""
+            placeholder="Que faut-il faire ?"
+            onclick=""
+            name="todo"
+            id="whattodo"
+            required
+          />
+          <input type="image" src="enter.png" alt="add" id="enter" />
+        </form>
+      </div>
+      <img src="button2.png" id="img2" />
+      <img src="button1.png" id="img1" />
+
+      <div class="settingsOff">
+        <p class="itemsleft"></p>
+        <p class="allOn">Tout</p>
+        <p class="activeOff">Activée</p>
+        <p class="completedOff">Réalisée</p>
+        <p class="completeall">Valider Tout</p>
+        <p class="clearcompleted">Vider</p>
+      </div>
+
+      <div class="maincontent"></div>
+
+      <noscript
+        ><p>
+          Votre navigateur ne prend pas en charge les scripts ou a été configuré
+          pour ne pas autoriser les scripts. !
+        </p></noscript
+      >
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
