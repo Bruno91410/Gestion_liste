@@ -19,27 +19,43 @@
             maxlength="35"
             value=""
             placeholder="Que faut-il faire ?"
-            onclick=""
             name="todo"
             id="whattodo"
             required
           />
-          <input type="image" src="images/enter.png" alt="add" id="enter" />
+          <input
+            type="image"
+            src="images/enter.png"
+            alt="add"
+            id="enter"
+            onclick="drawShelves(); return false;"
+          />
         </form>
       </div>
       <img src="images/button2.png" id="img2" />
       <img src="images/button1.png" id="img1" />
 
-      <div class="settingsOn">
-        <p class="itemsleft">test</p>
+      <div class="settingsOff">
+        <p class="itemsleft"></p>
         <p class="allOn">Tout</p>
-        <p class="activeOn">Activée</p>
-        <p class="completedOn">Réalisée</p>
+        <p class="activeOff">Activée</p>
+        <p class="completedOff">Réalisée</p>
         <p class="completeall">Valider Tout</p>
         <p class="clearcompleted">Vider</p>
       </div>
-
-      <div class="maincontent"></div>
+      <div class="maincontent">
+        <!-- test liste -->
+        <!-- <div class="done">
+          Test 1
+          <img src="images/delete.png" class="cross" />
+          <img src="images/pencil.png" class="rename" />
+        </div>
+        <div class="actions">
+          Test 2
+          <img src="images/delete.png" class="cross" />
+          <img src="images/pencil.png" class="rename" />
+        </div> -->
+      </div>
 
       <noscript
         ><p>
@@ -47,7 +63,23 @@
           pour ne pas autoriser les scripts. !
         </p></noscript
       >
+      <div class="renameOff"></div>
+      <form class="renameformOff">
+        <input
+          class="renameinputOff"
+          type="text"
+          maxlength="35"
+          value=""
+          placeholder="Annuler si non renseigné ?"
+          onclick="drawShelves(); return false;"
+          name="rename"
+          required
+        />
+        <button class="renamebuttonOff">Enregistrer</button>
+        <button class="renamecancelbuttonOff">Annuler</button>
+      </form>
     </div>
+    <div id="container"></div>
   </body>
   <script src="script.js"></script>
 </html>
